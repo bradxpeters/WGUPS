@@ -1,3 +1,4 @@
+from Objects.Constants import AT_HUB
 from Objects.Package import Package
 from Utils.CSVUtils import get_packages_from_csv
 
@@ -13,7 +14,7 @@ def get_packages() -> list:
         zipcode = package[4]
         deadline = package[5]
         weight = package[6]
-        status = "At Hub"
+        status = AT_HUB
 
         packages.append(
             Package(address, city, deadline, package_id, state, status, weight, zipcode)

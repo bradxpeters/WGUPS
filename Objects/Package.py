@@ -1,5 +1,7 @@
 from datetime import datetime
 
+from Objects.Constants import AT_HUB, EN_ROUTE, DELIVERED
+
 
 class Package:
     def __init__(self, address, city, deadline, package_id, state, status, weight, zipcode):
@@ -41,8 +43,8 @@ class Package:
         time = datetime(*time[:6])
 
         if self.delivery_time < time:
-            self.status = "Delivered"
+            self.status = DELIVERED
         elif self.departure_time > time:
-            self.status = "En Route"
+            self.status = EN_ROUTE
         else:
-            self.status = "At Hub"
+            self.status = AT_HUB
