@@ -3,7 +3,7 @@
 
 from Objects.Package import Package
 from Objects.Truck import Truck
-from Utils.DeliveryAlorithm import deliver_packages_for_truck
+from Utils.DeliveryAlgorithm import deliver_packages_for_truck
 from Utils.HashMap import HashMap
 from Utils.InterfaceUtils import start_interface
 from Utils.PackageUtils import get_packages

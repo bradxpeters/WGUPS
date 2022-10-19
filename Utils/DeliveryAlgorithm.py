@@ -8,6 +8,7 @@ from Utils.HashMap import HashMap
 
 
 def deliver_packages_for_truck(truck: Truck, packages_map: HashMap):
+
     packages_to_deliver = []
     for package_id in truck.packages:
         package = packages_map.get(package_id)
@@ -16,12 +17,13 @@ def deliver_packages_for_truck(truck: Truck, packages_map: HashMap):
     truck.packages.clear()
 
     while len(packages_to_deliver) > 0:
-        next_address_distance = 10000
+        next_address_distance = 1000
         next_package: Optional[Package] = None
 
         for package in packages_to_deliver:  # type: Package
-            if distance_between_truck_and_package(truck, package) <= next_address_distance:
-                next_address_distance = distance_between_truck_and_package(truck, package)
+            distance = distance_between_truck_and_package(truck, package)
+            if distance <= next_address_distance:
+                next_address_distance = distance
                 next_package = package
 
         truck.packages.append(next_package.id)
