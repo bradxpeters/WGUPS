@@ -18,15 +18,15 @@ class Package:
 
     def __str__(self):
         return \
-            'Package ID: {}\n' \
-            'Address: {}\n' \
-            'City: {}\n' \
-            'Deadline: {}\n' \
-            'Delivery Time: {}\n' \
-            'State: {}\n' \
-            'Status: {}\n' \
-            'Weight: {}\n' \
-            'Zipcode: {}\n'.format(
+            'Package ID: {}' \
+            ' Address: {}' \
+            ' City: {}' \
+            ' Deadline: {}' \
+            ' Delivery Time: {}' \
+            ' State: {}' \
+            ' Status: {}' \
+            ' Weight: {}' \
+            ' Zipcode: {}'.format(
                 self.id,
                 self.address,
                 self.city,

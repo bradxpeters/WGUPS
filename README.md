@@ -1,3 +1,6 @@
+Python Version: 3.8
+Script Entry Point: WGUPS/Main.py
+
 Assumptions:
 
 •   Each truck can carry a maximum of 16 packages, and the ID number of each package is unique.
