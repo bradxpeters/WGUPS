@@ -7,14 +7,14 @@ def get_packages() -> list:
     packages_from_scv = get_packages_from_csv()
     packages = []
     for package in packages_from_scv:
-        package_id = int(package[0])
         address = package[1]
         city = package[2]
-        state = package[3]
-        zipcode = package[4]
         deadline = package[5]
-        weight = package[6]
+        package_id = int(package[0])
+        state = package[3]
         status = AT_HUB
+        weight = package[6]
+        zipcode = package[4]
 
         packages.append(
             Package(address, city, deadline, package_id, state, status, weight, zipcode)

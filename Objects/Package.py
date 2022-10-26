@@ -39,6 +39,7 @@ class Package:
             )
 
     def get_status(self, time):
+
         # Convert struct to datetime
         time = datetime(*time[:6])
 

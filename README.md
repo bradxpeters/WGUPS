@@ -13,3 +13,7 @@ Assumptions:
 •   The delivery address for package #9, Third District Juvenile Court, is wrong and will be corrected at 10:20 a.m. WGUPS is aware that the address is incorrect and will be updated at 10:20 a.m. However, WGUPS does not know the correct address (410 S State St., Salt Lake City, UT 84111) until 10:20 a.m.
 •   The distances provided in the WGUPS Distance Table are equal regardless of the direction traveled.
 •   The day ends when all 40 packages have been delivered.
+
+To Run:
+1. Run `python3 Main.py` from the root directory of the application. 
+2. Follow the prompts to access the delivery information
